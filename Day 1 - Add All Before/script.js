@@ -23,3 +23,9 @@ function addBefore(num) {
 addAllBeforeArray();
 
 console.log(addBefore(13));
+
+// Alternate Solutions:
+
+function addBefore(num) {
+    return (num * (num + 1)) / 2;
+}
