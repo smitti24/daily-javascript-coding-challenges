@@ -1,3 +1,13 @@
+/* 
+Challenge #2: Small & Big Problem 
+============================
+==> Create a function smallBig that takes an array of numbers and, in order, returns both the min and max numbers
+
+Test Data: 
+smallBig([14, 35, 6, 1, 34, 54]) -> ([1, 54])
+
+*/
+
 // My solution to this problem
 
 const numbers = [14, 35, 6, 1, 34, 54];
