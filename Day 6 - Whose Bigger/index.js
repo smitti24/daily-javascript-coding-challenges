@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /* 
 
@@ -14,18 +14,27 @@ isBigger(() => 505050, () => 5050); -> 'First
 
 */
 
-// Solution: 
+// Solution:
 
 function isBigger(first, second) {
-    if (first() > second()) {
-        return 'First';
-    } else if (first() < second()) {    
-        return 'Second';
-    } else {    
-        return 'Both';
-    }
+  return first() > second() ? "First" : first() < second() ? "Second" : "Both";
 }
 
-console.log(isBigger(() => 5, () => 10));
-console.log(isBigger(() => 25, () => 25));
-console.log(isBigger(() => 505050, () => 5050));
+console.log(
+  isBigger(
+    () => 5,
+    () => 10
+  )
+);
+console.log(
+  isBigger(
+    () => 25,
+    () => 25
+  )
+);
+console.log(
+  isBigger(
+    () => 505050,
+    () => 5050
+  )
+);
